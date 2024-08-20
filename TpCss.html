@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parrafo {
+            font-size: medium;
+            text-transform: capitalize;
+            text-decoration: dotted;
+        }
+        .contenedor {
+            justify-content: left;
+        }
+        .primerBloque {
+            font-size: 25px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: underline;
+            background-color: gray;
+        }
+        .segundoBloque {
+            padding: 5px;
+            padding-right: 1000px;
+            background-color: rgba(211, 211, 211, 0.329);
+        }
+        .segundoContenedor {
+            padding: 10px;
+            display: flex;
+            background-color: rgb(185, 241, 245);
+        }
+        .caja1 {
+            margin: 7px;
+            padding: 5px;
+            background-color: rgb(98, 135, 255);
+            border: 5px solid rgb(70, 77, 90);
+            border-radius: 10px;
+            box-shadow: 4px 5px 10px gray;
+        }
+
+        .caja2 {
+            margin: 7px;
+            padding: 5px;
+            background-color: rgb(192, 255, 128);
+            border: 20px solid rgb(91, 255, 146);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .cajarelativa {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        .cajaabsoluta {
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            left: 1000px;
+            background-color: rgb(196, 255, 119);
+            padding-right:  100px;
+        }
+        @media (max-width > 750px){
+            @media screen {
+                body {
+                    background-color: lightgreen;
+                }
+                h1 {
+                    font-size: small;
+                }
+                section {
+                    max-width: 90px;
+                    padding: 90px;
+                }
+            }
+        }
+        .grid-container {
+            margin: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }       
+        .grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+            border-radius: 10px;
+            background-color: rgba(165, 42, 42, 0.993);
+            padding: 10px;
+            text-align: center;
+        }
+        .tituloGrid {
+            margin: 40px;
+            margin-left: 0px;
+            border: 1px solid black;
+        }
+        
+        @keyframes mover {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 1200px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+        .animacion1 {
+            height: 75px;
+            width: 75px;
+            background-color: lightgreen;
+            position: relative;
+            animation: mover 7s infinite;
+            transition: background-color 0.5s;
+        }
+        .animacion1:hover {
+            background-color: black;
+        }
+        .animacion2 {
+            height: 75px;
+            width: 75px;
+            border-radius: 100px;
+            background-color: rgb(255, 94, 0);
+            position: relative;
+            animation: mover 5s infinite;
+            transition: background-color 0.5s;
+        }
+        .animacion2:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--Ejercicio 4.1-->
+    <blockquote class="primerBloque">
+        Trabajo Practico de CSS
+    </blockquote>
+    <section class="contenedor">
+        <!--Ejercicio 4.2-->
+        <h2>Propiedades de texto en css</h2>
+        <p style="border: 1px solid black;"></p>
+        <p class="parrafo">
+            Este parrafo muestra la aplicacion de diferentes propiedades de texto en CSS. Como transformacion de texto y decoraciones
+        </p>
+    </section>
+    <div class="segundoContenedor">
+        <blockquote class="segundoBloque">
+            Hola - Un random 
+        </blockquote>
+    </div>
+    <!--Ejercicio 4.3-->
+    <h2>Propiedades de Caja en CSS</h2>
+    <p style="border: 1px solid black;"></p>
+    <div class="caja1">
+        Propiedades de CSS
+    </div><br>
+    <div class="caja2">
+        Propiedades de CSS
+    </div>
+    <!--Ejercicio 4.4-->
+    <h2>Posicion relativa y absoluta en CSS</h2>
+    <p style="border: 1px solid black;"></p>
+    <div class="cajarelativa">Caja con posicion relativa
+        <div class="cajaabsoluta">Caja con posicion absoluta</div>
+    </div>
+
+    <!--Ejercicio 4.5-->
+    <!--Chequear el style de arriba-->
+    <p></p>
+
+    <!--Ejercicio 4.6-->
+    
+    <h2 class="tituloGrid">Propiedades de grid en css</h2>
+    <div class="grid-container">
+        <div class="grid-item1">Elemento 1</div>
+        <div class="grid-item2">Elemento 2</div>
+        <div class="grid-item3">Elemento 3</div>
+        <div class="grid-item4">Elemento 4</div>
+    </div>
+
+    <!--Ejercicio 4.7-->
+    <h2>Propiedades de animaciones en CSS</h2>
+    <section>
+        <div class="animacion1">
+            
+        </div>
+        <div class="animacion2">
+
+        </div>
+    </section>
+
+</body>
+</html>
