@@ -1,0 +1,182 @@
+/*Reglas generales*/
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*Reglas para el header*/
+.container__principalHeader {
+  width: 100vw; 
+  height: 8vh;
+  background-color: #1e7244; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.container__contentHeader {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+
+}
+
+.headerSearch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vh;
+}
+
+.inputHeader {
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  height: 2vh;
+  width: 20vw;
+  font-size: 2.5vh;
+}
+
+.buttonSearch {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 14vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.8vh;
+}
+
+.buttonSearch:hover {
+  cursor: pointer;
+}
+
+.header__buttonAdd {
+  width: 15vh;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  border-radius: 1px solid white;
+  background-color: transparent;
+  color: white;
+  
+}
+
+/*Reglas para la parte de seleccion*/
+
+.selectionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.selectionTitle {
+  font-size: 41px;
+  margin-bottom: 12vh;
+}
+
+.selectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 15vh;
+  gap: 3.5vh;
+  height: 20vh;
+  width: 40vw;
+  font-size: x-large;
+
+}
+
+.inputName__selection {
+  border: 1px solid black;
+  border-radius: 1.5vw;
+  height: 30vh;
+  font-size: 17px;
+  padding-left: 20px;
+
+}
+
+.inputName__selection:hover {
+  outline: none;
+  border: 2px solid rgb(51, 255, 0);
+}
+
+.inputImage__selection {
+  border: 1px solid black;
+  border-radius: 1.5vw;
+  height: 30vh;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.inputImage__selection:hover {
+  outline: none;
+  border: 2px solid rgb(51, 255, 0);
+}
+
+.inputNumber__selection {
+  border: 1px solid black;
+  border-radius: 1.5vw;
+  height: 30vh;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.inputNumber__selection:hover {
+  outline: none;
+  border: 2px solid rgb(51, 255, 0);
+}
+
+.select__selection {
+  font-size: 35px;
+  background-color: transparent;
+  border: 1.5px solid green;
+}
+
+.selectionAction {
+  display: flex;
+  justify-content: space-between;
+  gap: 29vw;
+
+}
+
+.buttonCancel {
+  color: orangered;
+  border: 0.4vh solid orange;
+  background-color: transparent;
+  width: 75px;
+  height: 30px;
+  font-size: 2.5vh;
+
+}
+
+.buttonCancel:hover {
+  outline: none;
+  cursor: pointer;
+  color: black;
+  border: 0.4vh solid black; 
+  background-color: orange;
+  box-shadow: 5px, 5px, 20px, 10px, solid red;
+
+}
+
+.buttonAccept {
+  color: green;
+  border: 0.4vh solid greenyellow;
+  height: 30px;
+  width: 75px;
+  background-color: transparent;
+  font-size: 2.5vh;
+}
+
+
+

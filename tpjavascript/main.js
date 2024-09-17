@@ -195,6 +195,6 @@ document.addEventListener('DOMContentLoaded', () => {
       displayStoredEmail();
   });
 
-
+  
   displayStoredEmail();
 });

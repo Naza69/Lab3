@@ -1,0 +1,60 @@
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css">
+      
+      <!--FONTS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fascinate+Inline&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
+      <!--ICONS-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+      <title>Proyecto Final</title>
+    </head>
+    <body>
+      <header>
+        <div class="container__principalHeader">
+
+          <div class="container__contentHeader">
+            <div class="headerSearch">
+              <input type="text" class="inputHeader" placeholder="Ingrese un elemento">
+              <button class="buttonSearch">Buscar
+                <span class="material-symbols-outlined">
+                  search
+                  </span>
+              </button>
+            </div> 
+            <div>
+              <button class="header__buttonAdd">Agregar Elemento</button>
+            </div>
+          </div>
+
+        </div>
+      </header>
+      
+      <section class="selectionSection">
+
+        <div class="selectionTitle">
+          Agregar o modificar un producto
+        </div>
+        <div class="selectionContent">
+          <input type="text" class="inputName__selection" placeholder="Ingrese un nombre">
+          <input type="text" class="inputImage__selection" placeholder="Ingrese una imagen">
+          <input type="tel" placeholder="0" class="inputNumber__selection">
+          <select name="" class="select__selection"></select>
+        </div>
+        <div class="selectionAction">
+          <button class="buttonCancel">Cancelar</button>
+          <button class="buttonAccept">Aceptar</button>
+        </div>
+
+      </section>
+      <script type="module" src="/main.js"></script>
+    </body>
+  </html>
