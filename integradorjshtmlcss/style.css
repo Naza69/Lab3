@@ -8,6 +8,8 @@
 
 /*Reglas para el header*/
 .container__principalHeader {
+  position: relative;
+  z-index: 3;
   width: 100vw; 
   height: 8vh;
   background-color: #1e7244; 
@@ -56,7 +58,9 @@
 }
 
 .buttonSearch:hover {
+  color: black;
   cursor: pointer;
+  background-color: lightgreen;
 }
 
 .header__buttonAdd {
@@ -69,14 +73,42 @@
   
 }
 
-/*Reglas para la parte de seleccion*/
+.header__buttonAdd:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+  background-color: lightgreen;
+}
+
+/*Reglas para la parte de seleccion emergente*/
 
 .selectionSection {
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 75vh;
+  visibility: hidden;
+  border: 5px solid black;
+
+}
+
+.selectionSectionPop {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  margin-inline: 360px;
+  height: 75vh;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 0.1vh solid rgb(170, 182, 172);
+  background-color: white;
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 .selectionTitle {
@@ -93,6 +125,25 @@
   height: 20vh;
   width: 40vw;
   font-size: x-large;
+}
+
+.buttonClose__selection {
+  outline: none;
+  border-radius: 100%;
+  color: rgb(131, 131, 131);
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  margin-left: 530px;
+  top: 80px;
+  
+}
+
+.buttonClose__selection:hover {
+  outline: none;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  cursor: pointer;
 
 }
 
@@ -137,7 +188,7 @@
 }
 
 .select__selection {
-  font-size: 35px;
+  font-size: 15px;
   background-color: transparent;
   border: 1.5px solid green;
 }
@@ -159,6 +210,7 @@
 
 }
 
+
 .buttonCancel:hover {
   outline: none;
   cursor: pointer;
@@ -178,5 +230,117 @@
   font-size: 2.5vh;
 }
 
+.buttonAccept:hover{
+  cursor: pointer;
+  outline: none;
+  color: black;
+  border: 0.4vh solid black;
+  background-color: green;
+}
 
+/*Reglas para las opciones catalogadas*/
 
+.container__Principalcategories {
+  position: fixed;
+  width: 220px;
+  top: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #38a167;
+  border: 1.5px solid black;
+}
+
+.categoriesTitle {
+  background-color: lightgreen;
+  margin-top: 10px;
+  margin-left: 15px;
+  border: 0.4vh solid black;
+
+}
+
+.categoriesContent{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#categoriesIcon {
+  position: fixed;
+  left: 190px;
+  top: 55px;
+}
+
+.categoriesOptions:hover {
+  cursor:pointer;
+  border: 0.2vh solid black;
+  border-radius: 10px;
+
+}
+
+.categoriesOptionsWhenClick {
+  border: 0.2vh solid black;
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+
+/*Reglas para el contenedor principal de los productos*/
+
+.container__Principalproducts {
+  position: fixed;
+  gap: 15px;
+  width: 80vw;
+  left: 245px;
+  height: 100%;
+  top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: calc(20% - 15px);
+  height: 13vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.product img {
+  width: 11vw;
+  height: 12vh;
+  border-radius: 10px;
+}
+
+.buttonDelete {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container__Principalproducts {
+    width: 450px;
+  }
+
+  .product img {
+    max-width: 70px;
+    max-height: 40px;
+  }
+
+  .product {
+    font-size: x-small;
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    margin-top: 65px;
+    border: 1px solid black;
+  }
+}

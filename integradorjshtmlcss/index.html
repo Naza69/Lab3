@@ -11,20 +11,25 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fascinate+Inline&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
       <!--ICONS-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
       <title>Proyecto Final</title>
     </head>
     <body>
+
+      <!-- Header principal -->
       <header>
         <div class="container__principalHeader">
 
           <div class="container__contentHeader">
             <div class="headerSearch">
-              <input type="text" class="inputHeader" placeholder="Ingrese un elemento">
-              <button class="buttonSearch">Buscar
+              <input type="text" class="inputHeader" placeholder="Ingrese un elemento" id="inputSearch">
+              <button class="buttonSearch" id="buttonSearch">Buscar
                 <span class="material-symbols-outlined">
                   search
                   </span>
@@ -38,23 +43,54 @@
         </div>
       </header>
       
+      <!-- Seleccion Pop Up -->
       <section class="selectionSection">
 
         <div class="selectionTitle">
           Agregar o modificar un producto
         </div>
-        <div class="selectionContent">
-          <input type="text" class="inputName__selection" placeholder="Ingrese un nombre">
-          <input type="text" class="inputImage__selection" placeholder="Ingrese una imagen">
-          <input type="tel" placeholder="0" class="inputNumber__selection">
-          <select name="" class="select__selection"></select>
-        </div>
-        <div class="selectionAction">
-          <button class="buttonCancel">Cancelar</button>
-          <button class="buttonAccept">Aceptar</button>
-        </div>
-
+        <form action="" class="selectionForm">
+          <div class="selectionContent">
+            <input type="text" class="inputName__selection" placeholder="Ingrese un nombre" name="name">
+            <input type="text" class="inputImage__selection" placeholder="Ingrese una imagen" name="image">
+            <input type="tel" placeholder="Ingrese el precio" class="inputNumber__selection" name="price">
+            <select name="categorie" class="select__selection">
+              <option value="Bebidas">Bebidas</option>
+              <option value="Pastas">Pastas</option>
+              <option value="Comida rapida">Comida rapida</option>
+              <option value="Pescado y mariscos">Pescado y mariscos</option>
+            </select>
+          </div>
+          <div class="selectionAction">
+            <button class="buttonCancel" type="button">Cancelar</button>
+            <button class="buttonAccept">Agregar</button>
+          </div>
+          <button class="buttonClose__selection" type="button">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </form>
       </section>
+
+      <!-- Categorias lateral -->
+      <aside class="container__Principalcategories">
+        <div class="categoriesTitle">
+          <h2>Categorias
+            <span class="material-symbols-outlined" id="categoriesIcon">
+              menu
+              </span>
+          </h2>
+        </div>
+        <div class="categoriesContent">
+          <p class="categoriesOptions" href="" id="bebidas">> Bebidas</p>
+          <p class="categoriesOptions" href="" id="pastas">> Pastas</p>
+          <p class="categoriesOptions" href="" id="comidarapida">> Comida rapida</p>
+          <p class="categoriesOptions" href="" id="pescadoymariscos">> Pescado y mariscos</p>
+        </div>
+      </aside>
+
+      <div class="container__Principalproducts">
+        
+      </div>
       <script type="module" src="/main.js"></script>
     </body>
   </html>
