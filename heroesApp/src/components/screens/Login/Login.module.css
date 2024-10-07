@@ -1,0 +1,23 @@
+.containerLogin{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(75,53,120);
+    background: linear-gradient(298deg, rgba(75,53,120,1) 9%, rgba(80,42,111,1) 16%, rgba(71,60,126,1) 37%, rgba(63,77,140,1) 44%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm{
+    background-color: rgb(47, 43, 43);
+    width: 30vw;
+    height: 50vh;
+    padding: 3vh;
+    border-radius: .6rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
